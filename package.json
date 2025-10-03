@@ -1,0 +1,20 @@
+{
+	"name": "example-plugin",
+	"version": "1.0.0",
+	"description": "Example plugin for Obsidian.",
+	"license": "MIT",
+	"author": "Jasperwoodchuck",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs watch",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs"
+	},
+	"dependencies": {
+		"esbuild": "^0.25.10"
+	},
+	"devDependencies": {
+		"obsidian": "^1.8.7",
+		"tslib": "^2.8.1",
+		"typescript": "^5.9.2"
+	}
+}
